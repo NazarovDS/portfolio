@@ -1,4 +1,4 @@
-import {inspect} from "util";
+import Typical from 'react-typical'
 import styles from './home.module.scss'
 
 export const Home = () => {
@@ -10,8 +10,20 @@ export const Home = () => {
                 </video>
                 <div className={styles.back}/>
                 <div className={styles.titleText}>
-                    <p>JS-developer</p>
-                    <h1>Nazarov Dmitriy</h1>
+                    <p>Hi, I am</p>
+                    <h1>Nazarov Dmitriy.</h1>
+                    <p>And I am</p>
+                    <Typical
+                    steps={[
+                        'JS-', 1000,
+                        'FullStackOverflow-', 1000,
+                        'React-', 1000,
+                        'Frontend-', 5000,
+                    ]}
+                    loop={Infinity}
+                    wrapper={'p'}
+                    />
+                    <p>developer.</p>
                 </div>
             </div>
 

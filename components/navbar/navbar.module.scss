@@ -6,9 +6,14 @@
   align-items: center;
   li {
     display: inline-block;
+    width: 90px;
     padding: 15px;
     margin: 0 15px;
     cursor: pointer;
     color: white;
+    text-align: center;
+  }
+  .active{
+    border-bottom: 2px solid white ;
   }
 }

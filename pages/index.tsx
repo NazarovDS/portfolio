@@ -4,8 +4,8 @@ import {Container} from "../components/container/Container";
 import Head from "next/head";
 
 export default function Home() {
-    const [page, setPage] = React.useState('home')
-    const handleSetPage = (page:string) => {
+    const [page, setPage] = React.useState(1)
+    const handleSetPage = (page:number) => {
         setPage(page)
     }
   return (
@@ -16,8 +16,8 @@ export default function Home() {
            <meta name="keywords" content="Nazarov Dmitriy, Назаров Дмитрий, портфолио, portfolio" />
            <meta charSet="utf-8"/>
        </Head>
-       <Navbar handleSetPage={handleSetPage}/>
-       <Container page={page}/>
+       <Navbar handleSetPage={handleSetPage}  page={page}/>
+       <Container handleSetPage={handleSetPage} page={page}/>
      </>
   )
 }
