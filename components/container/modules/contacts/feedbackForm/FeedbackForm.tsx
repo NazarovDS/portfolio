@@ -1,4 +1,5 @@
 import styles from './feedbackForm.module.scss'
+import emailjs from 'emailjs-com'
 import {FormikErrors, useFormik} from 'formik'
 import React from "react";
 import {ErrorMessage} from "./errorMessage/ErrorMessage";
@@ -35,6 +36,17 @@ export const FeedbackForm: React.FC = () => {
             console.log(values)
         }
     })
+    const sendEmail = (e)=>{
+        e.preventDefault()
+
+        emailjs.send('service_t407d2r', 'template_w7tr2gc', formik.values , 'user_Gfs89xJUkVEmHhAVSDsx9')
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+        formik.resetForm()
+    }
     return (
         <>
             <form onSubmit={formik.handleSubmit}>
@@ -70,7 +82,7 @@ export const FeedbackForm: React.FC = () => {
                     <label className={styles.textareaLabel} htmlFor="text">Сопроводительный текст</label>
                 </div>
                 <div className={styles.inputBlock}>
-                    <button type={'submit'}>Отправить</button>
+                    <button type={'submit'} onClick={sendEmail}>Отправить</button>
                 </div>
             </form>
 

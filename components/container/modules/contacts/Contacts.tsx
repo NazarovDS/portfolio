@@ -4,10 +4,6 @@ import {FeedbackForm} from "./feedbackForm/FeedbackForm";
 import React from "react";
 
 export const Contacts = () => {
-    const [formData, setFormData] = React.useState('')
-    const handleSetData = (value) => {
-        setFormData(value)
-    }
     return (
         <>
             <div className={styles.contactsBlock}>
