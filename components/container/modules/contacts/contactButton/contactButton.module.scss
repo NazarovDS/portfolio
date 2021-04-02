@@ -1,0 +1,27 @@
+.buttonLink{
+  margin-top: 15px;
+  border-radius: 10px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span{
+    color: white;
+  }
+  img{
+    height: 15px;
+    margin-right: 5px;
+  }
+}
+.telegram{
+  background-color: #039BE5;
+  width: 125px;
+}
+.mail{
+  background-color: #D32E2A;
+  width: 168px;
+}
+.github{
+  background-color: #4078c0;
+  width: 105px;
+}

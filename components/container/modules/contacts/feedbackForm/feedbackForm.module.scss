@@ -1,0 +1,42 @@
+.inputBlock{
+  position: relative;
+  margin-top: 20px;
+
+  input{
+    width: 50%;
+    padding: 6px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background-color: lighten(#1B1C1B, 10%);
+  }
+  .inputLabel{
+    position: absolute;
+    left: 0;
+    padding: 12px 0;
+    top: -24px;
+    color: #ffffff;
+    font-size: 10px;
+  }
+  textarea {
+    display: block;
+    min-height: 120px;
+    min-width: 50%;
+    padding: 6px;
+    font-size: 12px;
+    color: #fff;
+    border-bottom: 1px solid #ffffff;
+    background-color: lighten(#1B1C1B, 10%);
+    resize: none;
+  }
+  .textareaLabel{
+    position: absolute;
+    left: 0;
+    padding: 12px 0;
+    top: -24px;
+    color: #ffffff;
+    font-size: 10px;
+  }
+}

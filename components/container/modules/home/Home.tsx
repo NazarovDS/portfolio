@@ -6,7 +6,7 @@ export const Home = () => {
         <>
             <div className={styles.head}>
                 <video className={styles.video} autoPlay loop muted height={450} width={909}>
-                    <source src="/video.mp4" type="video/mp4"/>
+                    <source src="/media/video.mp4" type="video/mp4"/>
                 </video>
                 <div className={styles.back}/>
                 <div className={styles.titleText}>
@@ -26,7 +26,6 @@ export const Home = () => {
                     <p>developer.</p>
                 </div>
             </div>
-
         </>
     )
 }
