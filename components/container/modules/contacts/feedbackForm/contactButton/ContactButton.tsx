@@ -1,12 +1,13 @@
 import styles from './contactButton.module.scss'
+import React from "react";
 
 type buttonProps = {
     aHref: string,
-    newPage?: boolean,
     chanel: string,
     iconPath: string,
     altText: string,
-    text: string
+    text: string,
+    newPage?: boolean,
 }
 
 export const ContactButton: React.FC<buttonProps> = ({aHref, newPage, chanel, iconPath, altText, text}) => {

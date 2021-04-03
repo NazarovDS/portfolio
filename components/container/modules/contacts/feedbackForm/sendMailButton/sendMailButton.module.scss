@@ -1,0 +1,33 @@
+.sendMailButton{
+  width: 120px;
+  border-radius: 10px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  span{
+    color: white;
+  }
+  img{
+    height: 15px;
+    margin-right: 5px;
+  }
+  & .errorIcon{
+    height: 10px;
+  }
+}
+.valid{
+  background-color: #1B998B;
+}
+.valid:hover{
+  background-color: lighten(#1B998B, 5%);
+}
+.error{
+  background-color: #D32E2A;
+}
+.blocked{
+  cursor: auto;
+  background-color: gray;
+}

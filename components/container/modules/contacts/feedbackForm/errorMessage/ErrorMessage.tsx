@@ -3,7 +3,7 @@ import React from "react";
 
 export const ErrorMessage: React.FC<{errorText: string}> = ({errorText}) =>{
     return(
-        <div className={styles.error}>
+        <div className={styles.errorBlock}>
             <span>{errorText}</span>
         </div>
     )

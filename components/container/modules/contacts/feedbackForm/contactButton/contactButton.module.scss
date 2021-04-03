@@ -17,11 +17,20 @@
   background-color: #039BE5;
   width: 125px;
 }
+.telegram:hover{
+  background-color: lighten(#039BE5, 5%);
+}
 .mail{
   background-color: #D32E2A;
   width: 168px;
 }
+.mail:hover{
+  background-color: lighten(#D32E2A, 5%);
+}
 .github{
   background-color: #4078c0;
   width: 105px;
+}
+.github:hover{
+  background-color: lighten(#4078c0, 5%);
 }

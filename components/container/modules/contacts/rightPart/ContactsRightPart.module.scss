@@ -1,0 +1,26 @@
+.codePart{
+  width: 60%;
+  padding: 55px 0;
+  .codeWindow{
+    height: 100%;
+    border-left: 1px solid #1B998B;
+    padding-left: 25px;
+    line-height: 20px;
+    p{
+      color: #41a0d3;
+    }
+    .article{
+      color: #5e3f99;
+      font-style: italic;
+    }
+    .variable{
+      color: white;
+    }
+    .funcName{
+      color: #4c63a9;
+    }
+    .string{
+      color: #5ca674;
+    }
+  }
+}
