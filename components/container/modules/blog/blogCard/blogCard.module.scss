@@ -1,0 +1,32 @@
+.blogCard{
+  height: 390px;
+  border: var(--green) solid 2px;
+
+  .imagePart{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    position: relative;
+    //img{
+    //  width: 100%;
+    //  height: 100%;
+    //  object-fit:cover
+    //}
+  }
+  .cardName{
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+  }
+  .cardText{
+    padding: 0 15px;
+    p{
+      font-size: 14px;
+      color: white;
+      display: -webkit-box;
+      -webkit-line-clamp: 12;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}

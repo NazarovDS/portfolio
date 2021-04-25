@@ -19,7 +19,7 @@
   }
 }
 .valid{
-  background-color: #1B998B;
+  background-color: var(--green);
 }
 .valid:hover{
   background-color: lighten(#1B998B, 5%);

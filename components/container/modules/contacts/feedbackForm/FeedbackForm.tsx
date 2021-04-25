@@ -69,6 +69,7 @@ export const FeedbackForm: React.FC<PropType> = ({getEmail, getCompany, getText}
         getText(e.target.value)
 
     }
+
     return (
         <>
             <form onSubmit={formik.handleSubmit} >

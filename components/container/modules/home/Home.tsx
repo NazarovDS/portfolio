@@ -12,7 +12,7 @@ export const Home = () => {
                 <div className={styles.titleText}>
                     <p>Hi, I am</p>
                     <h1>Nazarov Dmitriy.</h1>
-                    <p>And I am</p>
+                    <p>And I am a</p>
                     <Typical
                     steps={[
                         'JS-', 1000,

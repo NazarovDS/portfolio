@@ -1,0 +1,10 @@
+.blogPage{
+
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin: 10px 20%;
+  padding: 10px;
+  overflow: auto;
+}

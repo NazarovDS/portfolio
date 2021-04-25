@@ -25,9 +25,10 @@ export const ContactsRightPart: React.FC<PropType> = ({email, company, text}) =>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.funcName}>sendMail</span>(<span className={styles.variable}>message</span>)</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.article}>return</span> <span className={styles.string}>'Сообщение отправлено.'</span></p>
-                <p>&#125;</p>
-
+                <p>&#125;</p><br/>
+                <p><span className={styles.funcName}>SendEmailForm()</span></p>
             </div>
+
         </div>
     )
 }
